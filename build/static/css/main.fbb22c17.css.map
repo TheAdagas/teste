@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.fbb22c17.css","mappings":"AACA,KAGE,wBAAyB,CADzB,+BAAmC,CADnC,QAAS,CAGT,eACF","sources":["index.css"],"sourcesContent":["\nbody {\n  margin: 0;\n  font-family: 'Segoe UI', sans-serif;\n  background-color: #0f0f0f;\n  overflow: hidden;\n}\n"],"names":[],"sourceRoot":""}
