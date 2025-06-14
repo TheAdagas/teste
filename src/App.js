@@ -14,8 +14,8 @@ const App = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = 800;
+    canvas.height = 400;
 
     const heartShape = (t) => {
       const x = 16 * Math.pow(Math.sin(t), 3);
@@ -41,7 +41,7 @@ const App = () => {
     }
 
     const animate = () => {
-      ctx.clearRect(0, 0, canvas.width 820, canvas.height 382);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (let p of particles.current) {
         if (mouseOver.current) {
@@ -107,7 +107,7 @@ const App = () => {
 
   const share = async () => {
     try {
-      await navigator.clipboard.writeText("https://amore-chi.vercel.app");
+      await navigator.clipboard.writeText("https://teste-n1xr.vercel.app");
       alert("Link copiado para a área de transferência!");
     } catch (err) {
       alert("Erro ao copiar link.");
