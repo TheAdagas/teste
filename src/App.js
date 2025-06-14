@@ -61,7 +61,7 @@ const App = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 105, 180, ${p.alpha})`;
+        ctx.fillStyle = `rgba(25, 10, 18, ${p.alpha})`;
         ctx.fill();
       }
 
