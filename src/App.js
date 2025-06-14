@@ -41,7 +41,7 @@ const App = () => {
     }
 
     const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, canvas.width 820, canvas.height 382);
 
       for (let p of particles.current) {
         if (mouseOver.current) {
@@ -61,7 +61,7 @@ const App = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(25, 10, 18, ${p.alpha})`;
+        ctx.fillStyle = `rgba(250, 100, 180, ${p.alpha})`;
         ctx.fill();
       }
 
