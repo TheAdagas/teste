@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './index.css';
 
+
 const App = () => {
   const canvasRef = useRef(null);
   const audioRef = useRef(null);
@@ -9,13 +10,13 @@ const App = () => {
   const mouseOver = useRef(false);
   const [typedText, setTypedText] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
-  const message = "Feito com amor para você ❤️";
+  const message = "Feeito com amor para você ❤️";
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    canvas.width = 800;
-    canvas.height = 400;
+    canvas.width = 500;
+    canvas.height = 600;
 
     const heartShape = (t) => {
       const x = 16 * Math.pow(Math.sin(t), 3);
@@ -35,7 +36,7 @@ const App = () => {
         y: y,
         vx: 0,
         vy: 0,
-        size: 2 + Math.random() * 2,
+        size: 2 + Math.random() * 3,
         alpha: 1,
       });
     }
@@ -113,7 +114,11 @@ const App = () => {
       alert("Erro ao copiar link.");
     }
   };
-
+<div className="App">
+    <div className="area-animacao">
+      <canvas ref={canvasRef}></canvas>
+    </div>
+  </div>
   return (
     <>
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0" />
@@ -132,5 +137,6 @@ const App = () => {
     </>
   );
 };
+
 
 export default App;

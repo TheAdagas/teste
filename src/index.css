@@ -1,7 +1,24 @@
-
 body {
-  margin: 0;
+  margin: 50;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  overflow: hidden;
+  background-color: #efc3c3;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  height: 60%;
+}
+
+.area-animacao {
+  border: 150px dashed rgb(10, 9, 9);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+}
+
+canvas {
+  display:flex;
+  background-color: #f4b5b5;
+  width: 50%;
+  height: 90%;
 }
